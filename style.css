@@ -1,0 +1,68 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  @font-face {
+   font-family: "acquest-script";
+   font-style: normal;
+   font-weight: 400;
+   src: url("./font/acquest-script.woff2") format("woff2");
+   font-display: swap;
+ } 
+ @font-face {
+    font-family: "AkayaKanadaka-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./font/AkayaKanadaka-Regular.ttf") format("ttf");
+    font-display: swap;
+  } 
+
+  
+  html {
+    height: 100%;
+    overflow-x: hidden;
+    /* overflow-y: hidden  */
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100%;
+    font-family: "AkayaKanadaka-Regular";
+    font-size: calc(10px + 5 * (100vw / 1555));
+    line-height: calc(10px + 10 * (100vw / 1555));
+    font-weight: 400;
+    color: black;
+    background-color: #fff;
+    min-width: 320px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  button,
+  a{
+   cursor: pointer;
+   text-decoration: none;
+   color: black;
+  }
+  p,
+  h2,
+  h1{
+    margin: 0;
+  }
+  p{
+    color: #fff;
+  }
+  li{
+    list-style: none;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  
