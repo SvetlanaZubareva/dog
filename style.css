@@ -65,4 +65,26 @@
     margin: 0;
     padding: 0;
   }
+  .header{
+    background-image: url("img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    
+  }
+  .header-ul{
+    padding: 100px 10% ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #CE8126;
+    font-weight: bold;
+    font-size: calc(20px + 22 * (100vw / 1555));
+  }
+  .header-ul__li-a{
+    color: #CE8126;
+  }
+  .header-ul__li-a:hover{
+    color: #657686;
+  }
   
