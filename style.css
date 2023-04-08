@@ -339,7 +339,7 @@
   transition-duration: .25s;
 }
 
-  @media(max-width: 900px){
+  @media(max-width: 1200px){
     header{
       background-position: center;
     }
@@ -354,6 +354,11 @@
       top: 190%;
     }
     
+  }
+  @media(min-width: 768px){
+    .header-ul__li:nth-child(6){
+      display: none;
+    }
   }
   @media(max-width: 768px){
     .header-ul__li:nth-child(1){
