@@ -90,10 +90,10 @@
     color: #657686;
   }
   .header-ul__li:nth-child(1){
-    margin-right: 10%;
+    margin-right: 10px;
   }
   .header-ul__li:nth-child(2){
-    margin-right: 10%;
+    margin-right: 10px;
   }
   .header-ul__li:nth-child(3){
     margin-right: 10px;
@@ -144,7 +144,7 @@
   }
   .footer{
     background-color: #CC8022;
-    padding: 50px 10% 50px;
+    padding: 50px 5% 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,4 +249,171 @@
   .modal-svg:hover{
     fill: #657686;
   }
+  /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+
+  @media(max-width: 900px){
+    header{
+      background-position: center;
+    }
+    .header-ul{
+      padding-bottom: 80%;
+    }
+    .header__p {
+      padding-left: 65%;
+    }
+    .main__button{
+      width: 40%;
+      top: 190%;
+    }
+    
+  }
+  @media(max-width: 768px){
+    .header-ul__li:nth-child(1){
+      display: none;
+    }
+    .header-ul__li:nth-child(2){
+      display: none;
+    }
+    .header-ul__li:nth-child(4){
+      display: none;
+    }
+    .header__p{
+      display: none;
+    }
+    .header{
+      height: 300px;
+    }
+    .img-mobile{
+      width: 70px;
+      height: 70px;
+    }
+    .header-ul{
+      padding-top: 10px;
+    }
+    .menu__btn{
+      top: 25px;
+    left: 80%;
+    }
+    .menu__box{
+      width: 100%;
+    }
+    .main__section{
+      flex-direction: column;
+      display: flex;
+      width: 100%;
+    }
+    .main__button{
+      position: initial;
+      width: 100%;
+    }
+    .modal{
+      width: 95%;
+    }
+    .modal-svg{
+      padding-left: 85%;
+    }
+    .footer {
+      flex-direction: column;
+    }
+    .footer__section-h2 {
+      line-height: calc(20px + 12 * (100vw / 1555));
+      text-align: center;
+  }
+  .footer__section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  }
+  
+  
 
