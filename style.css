@@ -113,7 +113,7 @@
   .header__p:hover{
     color: #657686;
   }
-  .main__section{
+  .main__sections{
     background-color: #657686;
     color: #fff;
     padding: 5%;
@@ -122,7 +122,7 @@
     line-height: calc(15px + 19 * (100vw / 1555));
     position: relative;
   }
-  .main__button{
+  .main__buttons{
     width: 30%;
     padding: 5%;
     color: #fff;
@@ -387,11 +387,11 @@
   margin-right: 5%;
   
 }
-.main-catalog__div{
+.main-catalog__divs{
   width: 50%;
   height: 50px;
   background-color: #fff;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 50%;
   display: flex;
   justify-content: center;
@@ -416,6 +416,54 @@
   padding: 20px;
   
 }
+.main__h2{
+  font-size: calc(24px + 10 * (100vw / 1555));
+  color: #CC8022;
+  text-align: center;
+  font-weight: 700;
+}
+.main-catalog__div{
+  display: flex;
+  justify-content: center;
+}
+.product__price{
+  color: #fff;
+  font-size: calc(24px + 10 * (100vw / 1555));
+  font-weight: 700;
+  text-align: center;
+}
+.product__size{
+  color: #fff;
+  font-size: calc(12px + 10 * (100vw / 1555));
+  margin-bottom: 10px;
+}
+.smart-basket__quantity-item{
+  background: #fff;
+  font-size: calc(10px + 10 * (100vw / 1555));
+  width: 200px;
+}
+.main__button{
+  color: #fff;
+  background-color: #CC8022;
+  font-size: calc(24px + 5 * (100vw / 1555));
+  font-weight: bold;
+  width: 200px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px 10px;
+    margin: 20px 0 0;
+}
+.section-product{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.num-page.num-active{
+  color: #CC8022;
+}
+
   @media(max-width: 1200px){
     header{
       background-position: center;
@@ -426,7 +474,7 @@
     .header__p {
       padding-left: 65%;
     }
-    .main__button{
+    .main__buttons{
       width: 40%;
       top: 190%;
     }
@@ -438,6 +486,23 @@
     }
     .header-useful{
       height: 100px;
+    }
+    .svg-catalog{
+      display: none;
+    }
+    .main-catalog__divs{
+      display: none;
+    }
+    .main-catalog__section{
+      padding-top: 25%;
+      width: 100%;
+    }
+    .main-catalog__section1{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0;
     }
   }
   @media(min-width: 768px){
@@ -475,12 +540,12 @@
     .menu__box{
       width: 100%;
     }
-    .main__section{
+    .main__sections{
       flex-direction: column;
       display: flex;
       width: 100%;
     }
-    .main__button{
+    .main__buttons{
       position: initial;
       width: 100%;
     }
@@ -516,6 +581,10 @@
     margin: 0;
     margin-bottom: 20px;
   }
+  .main-catalog__h2 {
+    font-size: 15px;
+    line-height: calc(24px + 10 * (100vw / 1555));
+}
   }
   
   
