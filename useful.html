@@ -33,10 +33,10 @@
                 </a>
             </li>
             <li class="header-ul__li">
-                <a class="header-ul__li-a" href="">
-                    <svg class="svg-button svg-button--ton" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="none">
+                <a class="header-ul__li-a header__h2" href="">
+                    <!-- <svg class="svg-button svg-button--ton" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="none">
                         <path  d="M61.136 46.667h-36.66c-.609 0-1.2-.2-1.675-.57a2.604 2.604 0 0 1-.944-1.462l-6.173-26.203c-.09-.383-.09-.78-.001-1.164.089-.383.266-.741.517-1.049a2.67 2.67 0 0 1 .933-.725c.363-.17.761-.26 1.164-.26h49.017c.403 0 .802.088 1.166.258.363.17.683.418.935.725.251.308.429.667.518 1.05.09.383.09.781-.001 1.165l-6.184 26.203a2.604 2.604 0 0 1-.941 1.461c-.475.37-1.064.57-1.672.57Zm-34.527-5.224h32.393l4.945-20.98H21.662l4.947 20.98ZM29.72 70c-2.031 0-4.017-.587-5.706-1.687a10.07 10.07 0 0 1-3.784-4.492 9.77 9.77 0 0 1-.585-5.783 9.932 9.932 0 0 1 2.812-5.124 10.36 10.36 0 0 1 5.26-2.74 10.524 10.524 0 0 1 5.935.57 10.219 10.219 0 0 1 4.61 3.686 9.827 9.827 0 0 1 1.731 5.561 9.892 9.892 0 0 1-3.012 7.074A10.423 10.423 0 0 1 29.721 70Zm0-14.792c-.97 0-1.92.28-2.728.806a4.813 4.813 0 0 0-1.809 2.148 4.671 4.671 0 0 0-.279 2.765c.19.928.658 1.78 1.345 2.45a4.952 4.952 0 0 0 2.515 1.31 5.03 5.03 0 0 0 2.837-.274 4.886 4.886 0 0 0 2.204-1.763 4.7 4.7 0 0 0 .827-2.659 4.727 4.727 0 0 0-1.44-3.381 4.981 4.981 0 0 0-3.471-1.402ZM55.888 70c-2.031 0-4.017-.587-5.707-1.687a10.07 10.07 0 0 1-3.783-4.492 9.77 9.77 0 0 1-.585-5.783 9.933 9.933 0 0 1 2.811-5.124 10.36 10.36 0 0 1 5.26-2.74 10.524 10.524 0 0 1 5.935.57 10.22 10.22 0 0 1 4.61 3.686 9.827 9.827 0 0 1 1.732 5.561 9.89 9.89 0 0 1-3.012 7.074A10.423 10.423 0 0 1 55.89 70Zm0-14.792c-.971 0-1.92.28-2.728.806a4.814 4.814 0 0 0-1.81 2.148 4.671 4.671 0 0 0-.278 2.765 4.75 4.75 0 0 0 1.344 2.45 4.952 4.952 0 0 0 2.515 1.31 5.03 5.03 0 0 0 2.838-.274 4.885 4.885 0 0 0 2.204-1.763c.54-.787.827-1.712.827-2.659a4.727 4.727 0 0 0-1.44-3.381 4.981 4.981 0 0 0-3.472-1.402Z"/><path  d="M18.297 20.459a2.73 2.73 0 0 1-1.568-.494 2.618 2.618 0 0 1-.975-1.293L11.159 5.224H2.681a2.717 2.717 0 0 1-1.896-.765A2.578 2.578 0 0 1 0 2.612C0 1.919.282 1.255.785.765A2.717 2.717 0 0 1 2.681 0H13.1c.563 0 1.111.173 1.568.493.456.32.797.773.975 1.294L20.85 17.02a2.547 2.547 0 0 1-.369 2.353 2.663 2.663 0 0 1-.953.798 2.738 2.738 0 0 1-1.221.287h-.009Z"/>
-                    </svg>
+                    </svg> -->
                 </a>
             </li>
             <li class="header-ul__li">
@@ -80,5 +80,50 @@
         </div>
         <img src="logo.svg" alt="logo">
     </footer>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+<div class="smart-basket__wrapper"></div>
+
+<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'main__section',
+				buttonAddToBasket: 'main__button',
+				productPrice: 'product__price-number',
+				productSize: 'product__size-element',
+    
+                
+				
+				productQuantityWrapper: 'product__quantity',
+				smartBasketMinArea: 'header__h2',
+				countryCode: '+7',
+				smartBasketCurrency: '₽',
+				smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: 'https://artstranger.ru/privacy.html',
+				},
+				nameIsRequired: false,
+			});
+		});
+
+        const items = document.querySelectorAll('.product__size-element');
+
+            items.forEach(item => {
+            item.addEventListener('click', function() {
+            items.forEach(elem => elem.classList.remove('section-product__list-item--color'));
+            this.classList.add('section-product__list-item--color');
+            })});
+	</script>
+    
 </body>
 </html>

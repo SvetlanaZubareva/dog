@@ -463,7 +463,12 @@
 .num-page.num-active{
   color: #CC8022;
 }
-
+.display{
+  display: none;
+}
+.smart-basket__close-form {
+  background-color: #CC8022;
+}
   @media(max-width: 1200px){
     header{
       background-position: center;

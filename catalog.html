@@ -86,7 +86,9 @@
 
 
                         <a class="item demo" href="product-description.html" style="text-decoration: none;">
-                            <img class="main__img raz " src="img/10.jpg"  alt="Картинка" width="200px" height="300px">
+                            <img class="main__img raz main__img1" src="img/10.jpg"  alt="Картинка" width="200px" height="300px">
+                            <img class="main__img raz main__img2 display" src="img/11.jpg"  alt="Картинка" width="200px" height="300px">
+                            <img class="main__img raz main__img3 display" src="img/12.jpg"  alt="Картинка" width="200px" height="300px">
                             
 
 
@@ -95,9 +97,9 @@
                     </p>
                     
                     <div class="product__size btns-pages"> 
-                            <div class="product__size-element font-size1 num-page num-active main-nav__toggle2" data-sb-curent-price="1300" data-sb-curent-size="5 килограмм" data-sb-curent-id-or-vendor-code="1">5 килограмм</div>
-                            <div class="product__size-element font-size1 num-page main-nav__toggle" data-sb-curent-price="2600" data-sb-curent-size="10 килограмм" data-sb-curent-id-or-vendor-code="2">10 килограмм</div>
-                            <div class="product__size-element font-size1 num-page main-nav__toggle1" data-sb-curent-price="3500" data-sb-curent-size="15 килограмм" data-sb-curent-id-or-vendor-code="1">15 килограмм</div>          
+                            <div class="product__size-element font-size1 num-page   main-nav__toggle2 main-nav1" data-sb-curent-price="1300" data-sb-curent-size="5 килограмм" data-sb-curent-id-or-vendor-code="1">5 килограмм</div>
+                            <div class="product__size-element font-size1 num-page main-nav__toggle main-nav2" data-sb-curent-price="2600" data-sb-curent-size="10 килограмм" data-sb-curent-id-or-vendor-code="2">10 килограмм</div>
+                            <div class="product__size-element font-size1 num-page main-nav__toggle1 main-nav3" data-sb-curent-price="3500" data-sb-curent-size="15 килограмм" data-sb-curent-id-or-vendor-code="1">15 килограмм</div>          
                     </div>
                     </div>
                     <section class="section-product">
@@ -184,36 +186,14 @@
             })});
 	</script>
 
-    <!-- Изменение цвета при выборе грамовки корма -->
-    <!-- <script>
-    document.querySelector('.btns-pages').addEventListener('click', e => { // вешаем один обработчик события клика на весь блок
-        const { target } = e;  // цель, на которую мы кликнули
-        const targetClassList = target.classList;  // массив классов цели, на которую мы кликнули
-        const allNumPages = [ ...document.querySelectorAll('.num-page')];  // массив всех нумерованых блоков (блоки с классом .num-page), оператор '...' здесь не просто так
-        const activePageNumber = allNumPages.findIndex(i => i.classList.contains('num-active'));  // номер (индекс) ранее выбранной страницы
-        
-        switch(true) {  // этот оператор смотрит на какую кнопку мы кликнули
-          case targetClassList.contains('btn-left'): return activePageNumber && setNum(-1, true);  // если кликнули на кнопку влево
-          case targetClassList.contains('btn-right'): return  (activePageNumber - allNumPages.length + 1) && setNum(1, true);  // если кликнули на кнопку вправо
-          case targetClassList.contains('num-page'): return setNum(target.innerHTML);  // если кликнули прямо на число
-        }
-        
-        function setNum(num, direction = null) {  // функция, которая задает выбранную страницу. параметр num - какую цифру мы выбрали (если мы нажали на цифру). параметр direction - направление стрелки, которую мы выбрали (если мы нажали на стрелку)
-          allNumPages[activePageNumber].classList.remove('num-active'); // убирает класс .num-active с ранее выбранной страницы
-          // здесь самый сок
-          // если в вызываемой функции указан аргумент direction (он true или false), то берем индекс ранее выбранной цифры и плюсуем/минусуем 1, чтобы активировать предыдущую/следующую цифру
-          // плюсовать или минусовать указывает аргумент num, который равен -1 либо 1
-          // если в вызываемой функции не указан аргумен direction (он равен null) - значит мы кликнули прямо на число. берем содержимое выбранной цифры (через innerHTML) и по полученому индексу делаем элемент активным
-          (allNumPages[direction === null ? target.innerHTML - 1 : activePageNumber + num]).classList.add('num-active') ;
-        }
-      }); 
-      </script> -->
-
+    
+<!-- Переключатель цвета грамовки -->
 <script>
     
 let navToggle = document.querySelector('.main-nav__toggle');
 let navToggle1 = document.querySelector('.main-nav__toggle1');
 let navToggle2 = document.querySelector('.main-nav__toggle2');
+let mainImg = document.querySelector(".main__img")
 
 
 navToggle.addEventListener('click', function () {
@@ -238,13 +218,55 @@ if (navToggle1.classList.contains('num-active')) {
 
 
 navToggle2.addEventListener('click', function () {
-if (navToggle2.classList.contains('num-active')) {
+    if (navToggle2.classList.contains('num-active')) {
     navToggle2.classList.remove('num-active');
 } else {
     navToggle2.classList.add('num-active');
     navToggle1.classList.remove('num-active');
     navToggle.classList.remove('num-active');
 }
+});
+
+
+
+
+</script>
+
+<!-- Скрипт для замены фото при выбори грамовки на карточке товара -->
+<script>
+    // let navMain = document.querySelector('.main-nav');
+let nav1 = document.querySelector('.main-nav1');
+let nav2 = document.querySelector('.main-nav2');
+let nav3 = document.querySelector('.main-nav3');
+let mainimg1 = document.querySelector(".main__img1");
+let mainimg2 = document.querySelector(".main__img2");
+let mainimg3 = document.querySelector(".main__img3")
+let display = document.querySelector(".display")
+
+
+nav1.addEventListener('click', function () {
+    if (mainimg1.classList.contains('display')) {
+    mainimg1.classList.remove('display');
+    mainimg2.classList.add('display');
+    mainimg3.classList.add('display');
+} 
+});
+
+
+nav2.addEventListener('click', function () {
+    if (mainimg2.classList.contains('display')) {
+    mainimg2.classList.remove('display');
+    mainimg1.classList.add('display');
+    mainimg3.classList.add('display');
+} 
+});
+
+nav3.addEventListener('click', function () {
+    if (mainimg3.classList.contains('display')) {
+    mainimg3.classList.remove('display');
+    mainimg2.classList.add('display');
+    mainimg1.classList.add('display');
+} 
 });
 
 

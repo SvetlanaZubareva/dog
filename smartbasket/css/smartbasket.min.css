@@ -779,7 +779,7 @@ a{
 	}
 }
 .smart-basket__send-form {
-	background: #5D3051;
+	background: #657686;
 	border: none;
 	padding: 15px 25px;
 	color: #fff;
@@ -795,7 +795,7 @@ a{
 	}
 }
 .smart-basket__close-form {
-	background: #42855F;
+	background: #CC8022;
 	border: none;
 	padding: 15px 25px;
 	color: #fff;
@@ -943,11 +943,11 @@ a{
 	cursor: pointer
 }
 .smart-basket__alert-button_close {
-	background: #42855F;
+	background: #CC8022;
 	width: 48%
 }
 .smart-basket__alert-button_close:hover {
-	background: #0a76c0
+	background: #6b4313;
 }
 @media (max-width:450px) {
 	.smart-basket__alert-button_close {
@@ -956,11 +956,11 @@ a{
 	}
 }
 .smart-basket__alert-button_by {
-	background: #5D3051;
+	background: #657686;
 	width: 48%
 }
 .smart-basket__alert-button_by:hover {
-	background: #5D3051;
+	background: #536474;
 }
 @media (max-width:450px) {
 	.smart-basket__alert-button_by {
@@ -1056,4 +1056,7 @@ a{
 	100% {
 		stroke-dashoffset: 900
 	}
+}
+a{
+	text-decoration: none;
 }
