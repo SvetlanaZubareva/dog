@@ -11,12 +11,12 @@
     <header class="header">
         <ul class="header-ul">
             <li class="header-ul__li">
-                <a class="header-ul__li-a header-ul__li-a1" href="">
+                <a class="header-ul__li-a header-ul__li-a1" href="" style="text-decoration: none;">
                     О нас
                 </a>
             </li>
             <li class="header-ul__li">
-                <a class="header-ul__li-a" href="catalog.html">
+                <a class="header-ul__li-a" href="catalog.html" style="text-decoration: none;">
                     Каталог
                 </a>
             </li>
@@ -28,7 +28,7 @@
                 </a>
             </li>
             <li class="header-ul__li">
-                <a class="header-ul__li-a" href="useful.html">
+                <a class="header-ul__li-a" href="useful.html" style="text-decoration: none;">
                     Полезное
                 </a>
             </li>
@@ -46,14 +46,14 @@
                       <span></span>
                     </label>
                     <ul class="menu__box">
-                      <li><a class="menu__item" href="catalog.html">Каталог</a></li>
-                      <li><a class="menu__item" href="useful.html">Полезное</a></li>
-                      <li><a class="menu__item" href="tel:+79119974400">8-911-997-44-00</a></li>
+                      <li><a class="menu__item" href="catalog.html" style="text-decoration: none;">Каталог</a></li>
+                      <li><a class="menu__item" href="useful.html" style="text-decoration: none;">Полезное</a></li>
+                      <li><a class="menu__item" href="tel:+79119974400" style="text-decoration: none;">8-911-997-44-00</a></li>
                     </ul>
                   </div>
             </li>
         </ul>
-        <a class="header__p" href="tel:+79119974400">
+        <a class="header__p" href="tel:+79119974400" style="text-decoration: none;">
             8-911-997-44-00
         </a>
     </header>
@@ -95,26 +95,26 @@
                 КАК С НАМИ СВЯЗАТЬСЯ
             </h2>
             <div class="footer__section-p">
-                <a class="footer__section-a" href="tel:+79119974400">+7-911-997-44-00 </a>
-                <a class="footer__section-a" href="tel:+79119150347">+7-911-915-03-47</a>
-                <a class="footer__section-a" href="mailto:Korm_dog@mail.ru">Korm_dog@mail.ru</a>
+                <a class="footer__section-a" href="tel:+79119974400" style="text-decoration: none;">+7-911-997-44-00 </a>
+                <a class="footer__section-a" href="tel:+79119150347" style="text-decoration: none;">+7-911-915-03-47</a>
+                <a class="footer__section-a" href="mailto:Korm_dog@mail.ru" style="text-decoration: none;">Korm_dog@mail.ru</a>
             </div>
         </section>
         <div class="footer-div">
-            <a class="footer-div__p">
+            <a class="footer-div__p" style="text-decoration: none;">
                 Скачать реквизиты для оплаты
             </a>
         </div>
         <img src="logo.svg" alt="logo">
     </footer>
-    <div class="div-modal main-nav--closed main-nav main-nav--nojs" class="modal1" id="modal">
-        <section class="section-form modal" id="5">
+    <div class="div-modal main-nav--closed  main-nav main-nav--nojs" class="modal1" id="modal">
+        <section class="section-form  main-nav--closed  main-navs main-nav--nojs" id="5">
             <svg class="modal-svg navToggle1 main-nav__toggle1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" version="1.0" viewBox="0 0 78 78">
                 <path d="M20.2 20.2c-2.2 2.2-1.2 4.3 6 11.5l7.2 7.3-7.2 7.3c-7.2 7.2-8.2 9.3-6 11.5 2.2 2.2 4.3 1.2 11.5-6l7.3-7.2 7.3 7.2c7.2 7.2 9.3 8.2 11.5 6 2.2-2.2 1.2-4.3-6-11.5L44.6 39l7.2-7.3c7.2-7.2 8.2-9.3 6-11.5-2.2-2.2-4.3-1.2-11.5 6L39 33.4l-7.3-7.2c-7.2-7.2-9.3-8.2-11.5-6z"/>
             </svg>
 
             <div class="row" class="modal-container">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4" style="width: 100%; margin-top: 50px;">
                     <form class="form" class="modal-form" action="sendmail.php" method="POST" enctype="multipart/form-data">
                         <legend class="madal-h2">ЗАДАТЬ ВОПРОС</legend>
         
@@ -130,7 +130,7 @@
                     
                         <div class="form-group">
                         <label for=""></label>
-                        <input type="text" class="form-control" id="" name="user_email" placeholder="Tmail">
+                        <input type="text" class="form-control" id="" name="user_email" placeholder="Email">
                         </div>
                         <div class="form-group">
                         <label for=""></label>
@@ -141,7 +141,7 @@
                         <input type="file" class="form-control" id="" name="upload" placeholder="Выберите Файл">
                         </div> -->
                         
-                        <button type="submit" class="btn btn-primary">ОТПРАВИТЬ</button>
+                        <button type="submit" class="btn btn-primary" style="background-color: #657686;">ОТПРАВИТЬ</button>
                         
                     </form>
                     </div>
@@ -199,10 +199,12 @@
     <!-- Открытие и закрытие модального окна -->
        <script>
             let navMain = document.querySelector('.main-nav');
+            let navMains = document.querySelector('.main-navs');
     let navToggle = document.querySelector('.main-nav__toggle');
     let navToggle1 = document.querySelector('.main-nav__toggle1');
 
 navMain.classList.remove('main-nav--nojs');
+navMains.classList.remove('main-nav--nojs');
 
 
 
@@ -236,6 +238,29 @@ if (navMain.classList.contains('main-nav--opened')) {
     navMain.classList.remove('main-nav--closed');
 }
 });
+
+navToggle.addEventListener('click', function () {
+if (navMains.classList.contains('main-nav--closed')) {
+    navMains.classList.remove('main-nav--closed');
+    navMains.classList.add('main-nav--opened');
+} else {
+    navMains.classList.add('main-nav--closed');
+    navMains.classList.remove('main-nav--opened');
+}
+});
+
+
+
+navToggle1.addEventListener('click', function () {
+if (navMains.classList.contains('main-nav--opened')) {
+    navMains.classList.remove('main-nav--opened');
+    navMains.classList.add('main-nav--closed');
+} else {
+    navMains.classList.add('main-nav--opened');
+    navMains.classList.remove('main-nav--closed');
+}
+});
+
 
 
 

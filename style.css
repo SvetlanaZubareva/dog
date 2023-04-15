@@ -130,7 +130,7 @@
     border: none;
     position: absolute;
     top: 150%;
-    left: 50%;
+    left: 45%;
   }
   .main__button-h2{
     margin-top: 20px;
@@ -175,9 +175,9 @@
     color: #657686;
     fill: #657686;
   }
-  .modal{
+.main-navs{
     background-color: #CC8022;
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,7 +185,7 @@
     border-radius: 50px;
     padding: 2%;
     box-sizing: border-box;
-    height: 450px;
+    height: 600px;
     margin-top: 10%;
   }
   .div-modal{
@@ -243,8 +243,10 @@
   }
   .modal-svg{
     fill: #fff;
-    padding-left: 90%;
+    left: 60%;
     cursor: pointer;
+    position: absolute;
+    z-index: 999;
   }
   .modal-svg:hover{
     fill: #657686;
@@ -469,6 +471,13 @@
 .smart-basket__close-form {
   background-color: #CC8022;
 }
+.main-catalog__ul{
+  margin-bottom: 0;
+  padding-bottom: 750px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+}
   @media(max-width: 1200px){
     header{
       background-position: center;
@@ -508,6 +517,12 @@
       justify-content: center;
       align-items: center;
       margin-right: 0;
+    }
+    .main-navs {
+      width: 50%;
+    }
+    .modal-svg{
+      left: 65%;
     }
   }
   @media(min-width: 768px){
@@ -554,11 +569,11 @@
       position: initial;
       width: 100%;
     }
-    .modal{
+    .main-nav1{
       width: 95%;
     }
     .modal-svg{
-      padding-left: 85%;
+      left: 80%;
     }
     .footer {
       flex-direction: column;
@@ -589,6 +604,10 @@
   .main-catalog__h2 {
     font-size: 15px;
     line-height: calc(24px + 10 * (100vw / 1555));
+}
+.main-catalog__ul{
+  display: flex;
+  flex-direction: column;
 }
   }
   
