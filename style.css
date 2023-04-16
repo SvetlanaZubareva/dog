@@ -593,6 +593,13 @@
     }
   }
   @media(max-width: 768px){
+    .main-product__p{
+      font-size: 15px;
+    }
+    .svg-product{
+      left: 70%;
+      top: 150%;
+    }
     .header-ul__li:nth-child(1){
       display: none;
     }
