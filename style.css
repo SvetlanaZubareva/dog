@@ -44,6 +44,19 @@
     margin: 0 auto;
     overflow-x: hidden;
   }
+  html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   button,
   a{
    cursor: pointer;
@@ -480,7 +493,9 @@
 }
 .boody-product{
   background-color: #657686;
-  padding: 100px 5% 100px;
+}
+.main-product{
+padding: 100px 5% 100px;
 }
 .main-product__a{
   color: #fff;
