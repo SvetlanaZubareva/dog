@@ -631,9 +631,9 @@ padding: 100px 5% 100px;
     .header__p{
       display: none;
     }
-    .header{
-      height: 500px;
-    }
+    /* .header{
+      height: 600px;
+    } */
     .img-mobile{
       width: 100px;
       height: 100px;
@@ -699,7 +699,7 @@ padding: 100px 5% 100px;
   padding-bottom: 50px;
 }
 .header{
-  height: 600px;
+  height: 700px;
 }
 .main-useful__p {
   font-size: 15px;
