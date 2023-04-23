@@ -619,6 +619,9 @@ padding: 100px 5% 100px;
       left: 50%;
       top: 150%;
     }
+    .svg-product1{
+      top: 190%;
+    }
     .header-ul__li:nth-child(1){
       display: none;
     }
